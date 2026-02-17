@@ -1,67 +1,106 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HLK 201 Helicopter Design</title>
-    <style>
-        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; color: #333; }
-        h1 { color: #000; margin-bottom: 5px; }
-        .info { margin-bottom: 30px; }
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-        th { background-color: #f4f4f4; font-weight: bold; }
-        tr:nth-child(even) { background-color: #f9f9f9; }
-        a { color: #0000EE; text-decoration: underline; }
-        .finals { background-color: #eeeeee !important; font-weight: bold; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HLK 201 Helicopter Design</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 40px; color: #333; }
+    h1 { color: #000; margin-bottom: 5px; }
+    .info { margin-bottom: 30px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ddd; padding: 12px; text-align: left; vertical-align: top; }
+    th { background-color: #f4f4f4; font-weight: bold; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    a { color: #0000EE; text-decoration: underline; }
+    .finals { background-color: #eeeeee !important; font-weight: bold; }
+
+    /* PDF viewer styling */
+    .viewer-wrap { margin-top: 24px; }
+    #pdfViewer { width: 100%; height: 800px; border: 1px solid #ccc; }
+  </style>
 </head>
 <body>
 
-    <header>
-        <h1>HLK 201 Helicopter Design</h1>
-        <p><strong>February 2026</strong></p>
-    </header>
+  <header>
+    <h1>HLK 201 Helicopter Design</h1>
+    <p><strong>February 2026</strong></p>
+  </header>
 
-    <div class="info">
-        <p><strong>Source: </strong>This course has been prepared using the lecture notes of Assoc. Prof. Özge Özdemir at Istanbul Technical University.</p>
-        <p><strong>To be presented in </strong>Turkish Aerospace</p>
-    </div>
+  <div class="info">
+    <p><strong>Source:</strong> This course has been prepared using the lecture notes of Assoc. Prof. Özge Özdemir at Istanbul Technical University.</p>
+    <p><strong>To be presented in</strong> Turkish Aerospace</p>
+  </div>
 
-    <h2>Lecture Schedule:</h2>
+  <h2>Lecture Schedule:</h2>
 
-    <p> <a href="#" onclick="loadPDF('HLK201.pdf')">Contents</a> </p>
-    <table>
-        <thead>
-            <tr>
-                <th>Lecture</th>
-                <th>Lecture Notes</th>
-                <th>Questions Sets 1</th>
-                <th>Questions Sets 2</th>
-                <th>Questions Sets 3</th>
-            </tr>
-        </thead>
-        <tbody>
-         
-            <tr>
-                <td>1</td>
-                <td><a href="#" onclick="loadPDF('HLK201.pdf')">Helicopter Design</a></td> 
-                <td><a href="#" onclick="loadPDF('HLK201_QUE_1.pdf')">Fundamentals of Helicopter Design Questions</a>,<br /> <a href="#" onclick="loadPDF('HLK201_ANS_1.pdf')">Fundamentals of Helicopter Design Answers</a>,<br /> <a href="#" onclick="loadPDF('HLK201_SOL_1.pdf')">Fundamentals of Helicopter Design Solutions</a></td>
-                <td><a href="#" onclick="loadPDF('HLK201_QUE_2.pdf')">Rotorcraft Performance and Control Questions</a>,<br /> <a href="#" onclick="loadPDF('HLK201_ANS_2.pdf')">Rotorcraft Performance and Control</a>,<br /> <a href="#" onclick="loadPDF('HLK201_SOL_2.pdf')">Rotorcraft Performance and Control</a></td>
-                <td><a href="#" onclick="loadPDF('HLK201_QUE_3.pdf')">Rotorcraft Design and Optimization Questions</a>,<br /> <a href="#" onclick="loadPDF('HLK201_ANS_3.pdf')">Rotorcraft Design and Optimization</a>,<br /> <a href="#" onclick="loadPDF('HLK201_SOL_3.pdf>)">Rotorcraft Design and Optimization</a></td>
-            </tr>
-           
-        </tbody>
-    </table>
+  <p><a href="HLK201.pdf" data-pdf="HLK201.pdf">Contents</a></p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Lecture</th>
+        <th>Lecture Notes</th>
+        <th>Questions Sets 1</th>
+        <th>Questions Sets 2</th>
+        <th>Questions Sets 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><a href="HLK201.pdf" data-pdf="HLK201.pdf">Helicopter Design</a></td>
+
+        <td>
+          <a href="HLK201_QUE_1.pdf" data-pdf="HLK201_QUE_1.pdf">Fundamentals of Helicopter Design Questions</a><br>
+          <a href="HLK201_ANS_1.pdf" data-pdf="HLK201_ANS_1.pdf">Fundamentals of Helicopter Design Answers</a><br>
+          <a href="HLK201_SOL_1.pdf" data-pdf="HLK201_SOL_1.pdf">Fundamentals of Helicopter Design Solutions</a>
+        </td>
+
+        <td>
+          <a href="HLK201_QUE_2.pdf" data-pdf="HLK201_QUE_2.pdf">Rotorcraft Performance and Control Questions</a><br>
+          <a href="HLK201_ANS_2.pdf" data-pdf="HLK201_ANS_2.pdf">Rotorcraft Performance and Control Answers</a><br>
+          <a href="HLK201_SOL_2.pdf" data-pdf="HLK201_SOL_2.pdf">Rotorcraft Performance and Control Solutions</a>
+        </td>
+
+        <td>
+          <a href="HLK201_QUE_3.pdf" data-pdf="HLK201_QUE_3.pdf">Rotorcraft Design and Optimization Questions</a><br>
+          <a href="HLK201_ANS_3.pdf" data-pdf="HLK201_ANS_3.pdf">Rotorcraft Design and Optimization Answers</a><br>
+          <a href="HLK201_SOL_3.pdf" data-pdf="HLK201_SOL_3.pdf">Rotorcraft Design and Optimization Solutions</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="viewer-wrap">
+    <h2>PDF Viewer</h2>
+    <iframe id="pdfViewer" title="PDF Viewer"></iframe>
+  </div>
+
+  <script>
+    // Click-to-view PDF inside the same page
+    (function () {
+      const viewer = document.getElementById('pdfViewer');
+
+      function loadPDF(file) {
+        viewer.src = file;
+        // Optional: scroll to viewer after click
+        viewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      // Attach handlers to all links that have data-pdf attribute
+      document.querySelectorAll('a[data-pdf]').forEach(a => {
+        a.addEventListener('click', (e) => {
+          e.preventDefault();
+          const file = a.getAttribute('data-pdf');
+          if (file) loadPDF(file);
+        });
+      });
+
+      // Optional: load default PDF at startup (uncomment if you want)
+      // loadPDF('HLK201.pdf');
+    })();
+  </script>
 
 </body>
-    
-    <iframe id="pdfViewer" width="100%" height="800px"></iframe>
-
-    <script>
-        function loadPDF(file){
-            document.getElementById("pdfViewer").src=file;
-        }
-    </script>
-    
 </html>
